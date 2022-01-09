@@ -9,15 +9,35 @@
         .field{
             border: 1px solid;
         }
+        .bat{
+            transition: transform 0.3s ease-in;
+        }
         .field:hover .bat{
-            transform: rotate(-60deg);
-            transform-origin:top right;
+            transform: rotate(-40deg);
+            transform-origin: top center ;
+            
+        }
+        
+        .ball{
+            width: 40px ;
+            height: 40px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            left: 555px;
+            top: -180px;
+            transition: transform 1s ease-out 0.3s;
+        }
+        .field:hover .ball{
+            transform: translate(950px);
+
         }
     </style>
 </head>
 <body>
     <div class="field">
         <img class="bat" src="bat.png" alt="">
+        <div class="ball"></div>
     </div>
 </body>
 </html>
